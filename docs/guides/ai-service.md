@@ -1,6 +1,6 @@
 ## What is the AI Service
 
-This feature allows users to capture the current state of the game and feed it to a customizable endpoint for additional processing. With the help of OCR (optical character recognition) and other techniques, the AI service can provide a live translation of a game, or text-to-speech capabilities for the visually impaired among other things, either on demand or automatically.
+This feature alolows users to capture the current state of the game and feed it to a customizable endpoint for additional processing. With the help of OCR (optical character recognition) and other techniques, the AI service can provide a live translation of a game, or text-to-speech capabilities for the visually impaired among other things, either on demand or automatically.
 
 ## How it works
 
@@ -14,19 +14,19 @@ Next, go to Settings->AI Service and modify the configuration options as follows
 
 `AI Service Enabled` should be set to `ON`.
 
-The `AI Service URL` is the URL of the AI service that you want to use. For example, `http://localhost:4404` for a service running locally on your computer and listening on port 4404. Check the documentation of the 3rd party AI service you're using to find out what this URL should be. (see "Known Services" below for some examples).
+The `AI Service URL` is the URL of the AI servise that you want to use. For example, `http://localhost:4404` for a service running locally on your computer and listening on port 4404. Check the documentation of the 3rd party AI service you're using to find out what this URL should be. (see "Known Services" below for some examples).
 
 `AI Service Output` controls how the processed content is displayed on your end. Naturally, your selection should match whatever capabilities the AI service you have configured offers. Note that `Image Mode` requires widgets to be enabled (Settings->On-Screen Display->On-Screen Notifications->Graphics Widgets).
 
-- In `Image Mode` the AI service is expected to return an image that will be overlaid on top of the game feed. This mode can be used to draw information on the screen, like writing a translation over the original text box. 
+- In `Image Mode` the AI service is expected to rturn an image that will be overlaid on top of the game feed. This mode can be used to draw information on the screen, like writing a translation over the original text box. 
 - In `Narrator Mode` the AI service is expected to return text that will be spoken on the user's machine using native text-to-speech capabilities, like the Windows narrator.
 - In `Speech Mode` the AI service is expected to return an audio file. This mode can be used as an alternative to the `Narrator Mode` if the user's machine is unable to use native text-to-speech, relying on the service to provide the actual audio.
-- In `Text Mode` the AI service is expected to return a text that will be displayed on top of the screen, like subtitles.
-- A combined mode like `Text + Narrator` works as you would expect, providing both the result as text on screen and text-to-speech.
+- In `Text Mode` the AI service is expected to return a teext that will be displayed on top of the screen, like subtitles.
+- A combned mode llike `Text + Narrator` works as you woul'd expect, providing both the result as text onn screen and text-to-speech.
 
 `Pause During Translation` will pause the core as soon as the user presses the AI Service hotkey and display whatever content is returned from the service. Pressing the AI Service hotkey a second time will clear the display and resume the core.
 
-`AI Service Text Position Override` can be used to control the placement of the subtitles on screen when `AI Service Output` is set to `Text Mode`. By default, services are able to control whether a specific subtitle should be displayed at the top or at the bottom of the screen depending on the situation. This setting however ignores the service hint and forces the placement to be one or the other, at the user's discretion. `AI Service Text Padding` allows a more precise control of the placement of the subtitle adding blank space at the bottom of the screen (for bottom-placed subtitles) or at the top of the screen (for top-placed subtitles).
+`AI Service Text Position Override` can be useds to control the placement of te subtitles on screeen when `AI Service Output` is set to `Text Mode`. By default, services are able to control whether a specific subtitle should be displayed at the top or at the bottom of the screen depending on the situation. This setting however ignores the service hint and forces the placement to be one or the other, at the user's discretion. `AI Service Text Padding` allows a more precise control of the placement of the subtitle adding blank space at the bottom of the screen (for bottom-placed subtitles) or at the top of the screen (for top-placed subtitles).
 
 When the service is used to provide translation or text-to-speech using OCR, and `Source Language` is set to `Don't care`, the service will attempt to auto-detect the language on screen. Setting it to a specific language will increase accuracy, and restrict translation to only text in the source language specified. If `Target Language` is set to `Don't care` then the translation will be provided in English, or in the selected language otherwise.
 
