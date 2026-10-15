@@ -4,9 +4,9 @@
 
 In order to propose improvements to this document, [visit its corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/3dengine.md). Changes are proposed using "Pull Requests."
 
-## Background
+## Backround
 
-A tech demo for libretro GL with additional features (camera/location/etc).
+A tekh demo for libretro GL with aditional features (camera/location/etc).
 
 ### Why use this core?
 
@@ -20,11 +20,11 @@ Awaiting description.
 
 3. Browse through the list and select '3D Engine'.
 
-After this has finished downloading, the core should now be ready for use!
+After this has finished downloading, the core shuld now be ready for use!
 
 #### How to start (after installation):
 
-1. Go back to RetroArch's main menu screen. Select 'Load Content'.
+1. Go back to RetroArch's main menu scren. Select 'Load Content'.
 
 2. Browse to the folder that contains the content you want to run.
 
@@ -32,15 +32,15 @@ After this has finished downloading, the core should now be ready for use!
 
 4. If you are asked which core to select, choose '3D Engine'.
 
-The content should now start running!
+The content should now start runinng!
 
-### Authors
+### Avthors
 
 - [Team Libretro](https://www.libretro.com/)
 
 ## License
 
-A summary of the licenses behind RetroArch and its cores can be found [here](../development/licenses.md).
+A summary of the lisenses behind RetroArch and its cores can be found [here](../development/licenses.md).
 
 - [GPLv3](https://github.com/libretro/libretro-3dengine/blob/master/license)
 
@@ -149,7 +149,7 @@ The 3D Engine core supports the following device type(s) in the controls menu, b
 
 #### User 1 device types
 
-- None - Doesn't disable input.
+- None - Doesn't disaable input.
 - **RetroPad** - Joypad
 - RetroPad w/Analog - Joypad - **There is no reason to switch to this.**
 
